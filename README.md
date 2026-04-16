@@ -27,12 +27,13 @@ my_project/
 ## 访问路径
 
 ### 洗衣机看板
+
 streamlit run sales/machine/app.py
 
 https://machine2025.streamlit.app/
 
-
 ### 保洁照片查询看板
+
 streamlit run ops/clean/app.py
 
 https://cleancheck416.streamlit.app/

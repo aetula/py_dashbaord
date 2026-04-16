@@ -74,7 +74,7 @@ def apply_filters(df, date_range, selected_apartments, selected_addresses, selec
         result = result[
             (result[COL_TIME] >= start_date) &
             (result[COL_TIME] <= end_date)
-        ]
+            ]
 
     # 公寓楼
     if selected_apartments:
@@ -221,7 +221,7 @@ if uploaded_file is not None:
         df = df[
             df[COL_BUCKET].notna() &
             df[COL_MACHINE].notna()
-        ].copy()
+            ].copy()
 
         # 时间为空的去掉
         df = df[df[COL_TIME].notna()].copy()
