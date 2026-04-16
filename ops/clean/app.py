@@ -312,5 +312,3 @@ if uploaded_file is not None:
 
     except Exception as e:
         st.error(f"读取或处理文件失败：{e}")
-
-        # streamlit run app_clean.py
