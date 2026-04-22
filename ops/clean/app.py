@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-
+# streamlit run ops/clean/app.py
 st.set_page_config(
     page_title="清洁照片筛选查看器",
     layout="wide"

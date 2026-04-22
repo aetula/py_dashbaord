@@ -3,7 +3,7 @@
 ## 项目结构
 
 ``` bash
-my_project/
+py_dashboard/
 ├── venv/                            ← 一个虚拟环境，共享
 ├── shared/                          ← 公共代码（可选）
 ├── streamlit/                       ← 样式配置
@@ -24,16 +24,30 @@ my_project/
     └── .streamlit/config.toml
 ``` 
 
+##  Reader完整配置示例
+
+| 配置项 | 值 | 说明 |
+|--------|-----|------|
+| Root Directory | `sales/machine/` | 指定应用所在目录 |
+| Build Command | `pip install -r ../../requirements.txt` | 安装依赖 |
+| Start Command | `streamlit run app.py --server.port 10000 --server.address 0.0.0.0` | 启动应用 |
+
+
+
+
+
 ## 访问路径
 
 ### 洗衣机看板
 
+``` bash
 streamlit run sales/machine/app.py
-
+```
 https://machine2025.streamlit.app/
 
 ### 保洁照片查询看板
 
+``` bash
 streamlit run ops/clean/app.py
-
-https://cleancheck416.streamlit.app/
+```
+https://cleancheck.streamlit.app/
